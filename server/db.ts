@@ -10,6 +10,8 @@ if (!connectionString) {
   process.exit(1);
 }
 
+console.log('Connecting to database with URL:', connectionString);
+
 // Configure SSL for Supabase
 const queryClient = postgres(connectionString, {
   ssl: {

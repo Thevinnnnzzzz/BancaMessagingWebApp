@@ -58,7 +58,7 @@ app.use((req, res, next) => {
   }
 
   const port = 3000;
-  app.listen(port, () => {
+  server.listen(port, '127.0.0.1', () => {
     log(`serving on port ${port}`);
   });
 })();
